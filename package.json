@@ -1,0 +1,27 @@
+{
+  "name": "weekly_pull",
+  "version": "1.0.0",
+  "description": "YOU'RE GONNA SEE SOME SERIOUS SHIT....",
+  "main": "server.js",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BJZeta/weekly_pull.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BJZeta/weekly_pull/issues"
+  },
+  "homepage": "https://github.com/BJZeta/weekly_pull#readme"
+}
