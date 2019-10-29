@@ -4,7 +4,9 @@
   "description": "YOU'RE GONNA SEE SOME SERIOUS SHIT....",
   "main": "server.js",
   "dependencies": {
+    "axios": "^0.19.0",
     "concurrently": "^5.0.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.7.7"
   },
