@@ -1,22 +1,58 @@
-.App {
-  text-align: center;
+body{
+  background-color: #EB6262
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#logoContainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #09d3ac;
+#logo{
+  background-color: white;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-top: 40px;
+  background-image: url("./images/dropbox.png");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+#landingContent{
+  display: flex;
+  flex-basis: 100%;
+  color: white;
+  justify-content: center;
+margin-top: 30px;
+}
+
+#landingContent2{
+  display: flex;
+  flex-basis: 100%;
+  color: white;
+  justify-content: center;
+margin-top: 30px;
+}
+
+#landingContent3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#customer{
+  height: 128px;
+  width: 128px;
+  background-image: url("./images/man.png");
+  margin-right: 20px;
+}
+
+#store{
+  height: 128px;
+  width: 128px;
+  background-image: url("./images/shop.png")
+}
+
