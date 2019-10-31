@@ -15,6 +15,6 @@ app.use(routes);
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pullbox');
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.log(`App is now listening on PORT: ${PORT}`);
 })
