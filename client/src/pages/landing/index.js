@@ -1,5 +1,10 @@
 import React from "react";
-import { setPriority } from "os";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 function Landing() {
     return (
@@ -16,7 +21,7 @@ function Landing() {
             </div>
 
             <div id="landingContent3">
-            <div id="customer"></div>
+           <Link to="/login"><div id="customer"></div></Link>
             <div id="store"></div>
             </div>
 

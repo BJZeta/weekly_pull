@@ -56,3 +56,71 @@ margin-top: 30px;
   background-image: url("./images/shop.png")
 }
 
+#nav-logo{
+  background-image: url("./images/dropbox.png");
+  height: 50px;
+  width: 50px;
+  background-size: 50px;
+  margin-right: 20px;
+  float: left;
+}
+
+#loginAvatars{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+#spiderman{
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/spiderman.png");
+  background-size: 100px 100px
+}
+
+#batman{
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/batman.png");
+  background-size: 100px 100px
+}
+
+#thor{
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/thor.png");
+  background-size: 100px 100px
+}
+
+#email{
+  margin-bottom: 10px;
+}
+
+#loginBtn{
+  margin-top: 10px;
+}
+
+#loginBoxArea{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  width: 18rem;
+  border-radius: 3%;
+}
+
+#loginBtn{
+  margin-top: 10px;
+}
+
+.input{
+  border-radius: 25px;
+}
+
+#signInTxt{
+  color: white;
+  margin: 0;
+}
