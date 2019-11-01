@@ -8,6 +8,8 @@ class CustomerBox extends Component {
         store_news: []
     }
 
+    
+
     render() {
         return (
             <div>

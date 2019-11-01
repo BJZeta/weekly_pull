@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema
 
-const comicSchema = new mongoose.Schema({
-    cover: { data: Buffer, contentType: String, required: true },
+const comicSchema = new Schema({
+    cover: { data: Buffer, contentType: String },
     title: { type: String, required: true },
     issue: { type: String },
     price: { type: String },
