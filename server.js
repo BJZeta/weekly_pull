@@ -17,10 +17,6 @@ app.use(routes);
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pullbox');
 
-app.listen(PORT, function () {
-    console.log(`App is now listening on PORT: ${PORT}`);
-});
-
 // Getting stuff to the database.
 
 const db = require("./models");
@@ -102,4 +98,8 @@ app.get("/insert-to-db", (res, req) => {
         });
 
     res.send("inserted comics to the database");
+});
+
+app.listen(PORT, function () {
+    console.log(`App is now listening on PORT: ${PORT}`);
 });
