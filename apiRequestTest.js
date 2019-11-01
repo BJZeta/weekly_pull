@@ -31,12 +31,12 @@ axios.get(`http://www.comicvine.com/api/issues/?format=json&api_key=${SECRET.com
             };
 
             db.Comics.create(data)
-            .then(dbComic => {
-                console.log(dbComic)
-            })
-            .catch(err => {
-                if(err) throw err;
-            });
+                .then(dbComic => {
+                    console.log(dbComic)
+                })
+                .catch(err => {
+                    if (err) throw err;
+                });
         });
 
     })
