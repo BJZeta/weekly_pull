@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import {Link} from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 const NavbarComponent = (props) => {
@@ -10,7 +11,7 @@ const NavbarComponent = (props) => {
   return (
     <div>
       <Navbar id="nav" color="white" light>
-        <NavbarBrand href="/" className="mr-auto"><div id="nav-logo"></div>The Pull Box</NavbarBrand>
+        <NavbarBrand href="/" className="mr-auto"><div id="nav-logo"></div><Link to="/customerBox">The PullBox</Link></NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>

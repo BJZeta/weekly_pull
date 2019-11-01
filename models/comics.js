@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema
 
 const comicSchema = new mongoose.Schema({
     cover: { type: String, required: true },
