@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 
-const comicSchema = new Schema({
-    cover: { data: Buffer, contentType: String },
+const comicSchema = new mongoose.Schema({
+    cover: { type: String, required: true },
     title: { type: String, required: true },
     issue: { type: String },
     price: { type: String },
@@ -18,7 +18,7 @@ const comicSchema = new Schema({
     genres: { type: Array },
     aboutBook: {
         pageCount: { type: String },
-        printRelease: { type: String },
+        releaseDate: { type: String, required: true },
         digitalRelease: { type: String },
         ageRating: { type: String },
         soldBy: { type: String },
