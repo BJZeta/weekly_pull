@@ -1,33 +1,33 @@
-const db = require("../models");
+const Comics = require("../models/comics");
 
 module.exports = {
   findAllComics: function(req, res) {
-    db.Comic
+    Comics
       .find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   findComicById: function(req, res) {
-    db.Comic
+    Comics
       .findById(req.params.id)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   createComic: function(req, res) {
-    db.Comic
+    Comics
       .create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   updateComic: function(req, res) {
-    db.Comic
+    Comics
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   removeComic: function(req, res) {
-    db.Comic
+    Comics
       .findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
