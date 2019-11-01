@@ -8,12 +8,12 @@ import {
 
 function Landing() {
     return (
-        <div id="logoContainer" className="container">
+        <div id="logoContainer">
 
             <div id="logo"></div>
 
             <div id="landingContent">
-                <h1>The Pull Box</h1>
+                <h1>The PullBox</h1>
             </div>
 
             <div id="landingContent2">
@@ -22,7 +22,7 @@ function Landing() {
 
             <div id="landingContent3">
            <Link to="/login"><div id="customer"></div></Link>
-            <div id="store"></div>
+           <Link to="/login"><div id="store"></div></Link>
             </div>
 
 
