@@ -1,19 +1,25 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
 const axios = require("axios");
 const app = express();
-require('dotenv').config();
+const path = require('path');
 const PORT = process.env.PORT || 3666;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
 };
 
 app.use(routes);
+
+app.use('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pullbox');
 
@@ -24,7 +30,6 @@ const db = require("./models");
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/pullBoxComics';
 mongoose.connect(MONGODB_URI);
 
-require('dotenv').config();
 
 app.get("/insert-to-db", (res, req) => {
 

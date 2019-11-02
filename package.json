@@ -17,7 +17,7 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
-    "build": "cd client && npm run build",
+    "build": "react-script build",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
@@ -30,5 +30,6 @@
   "bugs": {
     "url": "https://github.com/BJZeta/weekly_pull/issues"
   },
-  "homepage": "https://github.com/BJZeta/weekly_pull#readme"
+  "homepage": "https://github.com/BJZeta/weekly_pull/",
+  "proxy": "http://localhost:3666"
 }

@@ -1,33 +1,33 @@
-const Store = require('../models/stores');
+const db = require('../models');
 
 module.exports = {
     findAll: function(req, res) {
-        Store
+        db.Store
         .find(req.query)
         .sort({ date: -1 })
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
     findById: function(req, res) {
-        Store
+        db.Store
         .findById(req.params.id)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
     create: function(req,res) {
-        Store
+        db.Store
         .create(req.body)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
     update: function(req, res) {
-        Store
+        db.Store
         .findByIdAndUpdate({ _id: req.params.id }, req.body)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
     delete: function(req, res) {
-        Store
+        db.Store
         .findByIdAndDelete({ _id: req.params.id })
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));  
