@@ -30,6 +30,5 @@
   "bugs": {
     "url": "https://github.com/BJZeta/weekly_pull/issues"
   },
-  "homepage": "https://github.com/BJZeta/weekly_pull/",
-  "proxy": "http://localhost:3666"
+  "homepage": "https://github.com/BJZeta/weekly_pull/"
 }
