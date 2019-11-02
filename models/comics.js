@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const comicSchema = new mongoose.Schema({
-    cover: { data: Buffer, contentType: String, required: true },
+    cover: { data: Buffer, contentType: String },
     title: { type: String, required: true },
     issue: { type: String },
     price: { type: String },

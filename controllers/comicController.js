@@ -1,4 +1,5 @@
-const db = require("../models");
+const db = require("../models/comics");
+
 
 module.exports = {
   findAllComics: function(req, res) {
