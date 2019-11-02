@@ -3,7 +3,9 @@ const Schema = mongoose.Schema;
 
 const storeSchema = new Schema({
     storeName: { type: String, required: true },
+    phoneNumber: {type: String, required: true },
     address: { type: String, required: true },
+    storeHours: { type: String, required: true },
     email: { type: String, required: true },
     password: { type: String, required: true },
     profilePic: { type: String, required: true },
