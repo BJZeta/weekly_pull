@@ -4,7 +4,6 @@ const routes = require('./routes');
 const axios = require("axios");
 const app = express();
 const path = require('path');
-require('dotenv').config();
 const PORT = process.env.PORT || 3666;
 
 app.use(express.urlencoded({ extended: true }));
@@ -15,6 +14,10 @@ if (process.env.NODE_ENV === 'production') {
 };
 
 app.use(routes);
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build/index.html'));
+});
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pullbox');
 

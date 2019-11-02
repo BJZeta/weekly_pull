@@ -1,7 +1,5 @@
 module.exports = {
-    Comics: require("./comics"),
-    // Customers: require("./customers"),
-    // Stores: require("./stores")
+    Comic: require('./comics'),
+    Customer: require('./customers'),
+    Store: require('./stores')
 }
-
-// NEED TO ADD Customer and Store when done!!!
